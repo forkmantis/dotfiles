@@ -1,31 +1,22 @@
-# forkmantis's take on Greg's Dotfiles
+# forkmantis's take on Greg's take on Holman's dotfiles
 
-**Dotfile Management for the Obsessive Compulsive**
+## What the hell are these dotfiles?
 
-Dotfiles are files that contain configuration settings in Unix (and variant) systems. They usually have names that start with a dot (such as `.bashrc` and `.gitconfig`). Since the name begins with a dot (full stop), they are treated as hidden files. For guys that like to sharpen the saw such as me, they contain some of the most valuable information on a computer.
+One of my favorite things about Unixy/Linuxy systems is that so much of their configuration lives as text files in the filesystem.  Because of this, users have great power in customizing their experience on these systems.  In the early days (mid 2000s), when I was regularly ssh-ing into many machines, my customizations were not uniformly applied from one machine to the next.  My inital solution to this problem was to create a git repo of my dotifiles, and to manually symlink them from ~/dotfiles into my home directory.  For a long time, that was good enough.
 
-These are my dotfiles.
+I eventually moved back intot he Windows world, and forgot about dotfiles.
 
-## Greg: Credit Where Credit Is Due
+Fast forward to ~2017 or so, when I was given a Mac at work.  I started thinking about dotfiles again.  I mentioned it in passing to my buddy @gregmajor, who got excited and told me about his [repo](https://github.com/gregmajor/dotfiles), which he forked from [Zack Holman](https://github.com/holman/dotfiles).  
 
-Up until this current iteration, I used to manage my dotfiles by putting them all in a folder (`~/dotfiles`) and then symlinking them with a little shell script. It worked and, generally speaking I was happy with it. Prior to this I did what most people did and simply had different versions of dotfiles strewn across all my computers.
+There are 2 really nice things about this repo that have taken my dotfiles game to the next level.  The `redot` command in the root directory automates the symlinking that I used to do manually, and also other things like sourcing files, running install scripts, and installing software.  The second thing is that it allows modularization of the packages you want to manage.  Because of the way the `redot` command works, you don't have to lump all of your configurations together into a single `.bashrc` or `.zshrc`.  You can organize things into package specific folders, making it much easier to add, remove, and maintain packages and configurations.
 
-In December 2016, I stumbled across [Zach Holman's blog post](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/) and had one of those "ah-ha!" moments. I really liked the context-sensitive organization and convention-based code he put in place. I also liked some of the extra bits and bobbles like using Homebrew's bundle feature.
-
-Almost immediately I set out to combine Zach's dotfile strategy with my own. I wanted the cool organization and nifty features, but I also wanted to be able to run a single command that did it all and ultimately make it my own. This repository is the result of that effort.
-
-## Topical Paradise
-
-Bringing forth the notion of topics is one of the simple yet genius things Zach brought to his dotfiles. This makes it super easy to organize things logically and keep things tidy. For example, if you start using the greatest editor of all time, vim, then you create a `vim` folder, drop your `.vimrc` file (named as `.vimrc.symlink`) in there, and run `redot` to handle your vim settings. Everything vim related will live in that folder. If you lose your freaking mind and decide to use a different editor then cleaning up is as simple as removing the `vim` folder and re-running `redot`.
-
-## Conventions Rule
-
-I didn't want to have to edit the "base" files any time I made a change or added something new. To accomplish that, I adopted and tweaked Zach's convention-based setup:
+## Conventions
 
 ### Global Conventions
 
 - `bin/`: This directory is added to $PATH and is where to put useful scripts
 - `homebrew/Brewfile`: This is a [Homebrew bundle file]("https://coderwall.com/p/afmnbq/homebrew-s-new-feature-brewfiles") that gets executed if you elect to do so when you run `redot`
+- `lib` is where all the resources necessary for the redot command live.
 
 ### Topic Conventions
 - `<topic>/path.sh`: Any file with this name will be sourced during `$PATH` setup
@@ -46,7 +37,8 @@ cd ~/dotfiles
 
 The `redot` script will walk you through everything and won't make any change to your computer without asking permission first.
 
-## Bugs
+## I want my own dotfiles, what do I do?
 
-First and foremost, please remember that these are my *actual* dotfiles. You can simply browse through the source and steal what you like or you can go so far as to fork this repo and start making changes that suit your needs. I try to make sure everything works on MacOS, Linux, and even on Windows (a'la Git Bash and such), but I can't make any warranties or promises. That being said, if you do stumble on a bug, please [open an issue](https://github.com/forkmantis/dotfiles/issues) I'll have a look!
+If you like what you see here and what to get started, feel free to fork or clone the repo.  To make things easy, I  have created a `barebones` branch which has all of my own modules stripped out, and contains only the redot script and other minimal stuff you need to get going.  
 
+If you start with my master branch, you'll probably want to clean out a lot of my stuff and add your own.  If you start with the barebones branch, you should only need to make additive changes.

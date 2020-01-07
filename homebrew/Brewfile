@@ -7,6 +7,7 @@ tap 'azure/functions'
 
 brew 'azure-cli'
 brew 'azure-functions-core-tools'
+brew 'azure-functions-core-tools@3'
 brew 'base16-manager'
 brew 'bat'
 brew 'cmake'

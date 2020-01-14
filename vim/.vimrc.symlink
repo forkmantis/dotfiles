@@ -44,6 +44,11 @@ set scrolloff=2
 " line
 set formatoptions=qroct
 
+" formatting for long lines https://agilesysadmin.net/how-to-manage-long-lines-in-vim/
+set showbreak=…
+set linebreak
+autocmd VimResized * | set columns=120
+
 " automatically update the file if it was changed outside of VIM
 :set autoread
 

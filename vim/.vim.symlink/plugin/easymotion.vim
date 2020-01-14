@@ -8,11 +8,11 @@ let g:EasyMotion_keys='asdghkqwertyuopzxcvbnmfj'
 " Need one more keystroke, but on average, it may be more comfortable.
 nmap s <Plug>(easymotion-overwin-f2)
 
-nmap f <Plug>(easymotion-overwin-f)
-omap f <Plug>(easymotion-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+omap <Leader>f <Plug>(easymotion-f)
 
-nmap t <Plug>(easymotion-overwin-t)
-omap t <Plug>(easymotion-t)
+nmap <Leader>t <Plug>(easymotion-overwin-t)
+omap <Leader>t <Plug>(easymotion-t)
 
 " Turn on case-insensitive feature
 let g:EasyMotion_smartcase = 1

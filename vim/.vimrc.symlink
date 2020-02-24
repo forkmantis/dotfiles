@@ -67,12 +67,6 @@ autocmd VimResized * | set columns=120
 " case insensitive searches
 :set ignorecase
 
-" Enable true colors for vim
-set termguicolors
-
-" Anderson color scheme https://github.com/sainnhe/gruvbox-material
-colorscheme gruvbox-material
-
 ":filetype plugin on
 ":helptags ~/.vim/doc
 

@@ -19,3 +19,6 @@
 [submodule "zsh/plugins/fzf-tab"]
 	path = zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git
+[submodule "vim/.vim.symlink/pack/bundle/start/any-jump.vim"]
+	path = vim/.vim.symlink/pack/bundle/start/any-jump.vim
+	url = https://github.com/pechorin/any-jump.vim

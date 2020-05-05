@@ -25,3 +25,6 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/omnisharp-vim"]
 	path = vim/.vim.symlink/pack/bundle/start/omnisharp-vim
 	url = git://github.com/OmniSharp/omnisharp-vim
+[submodule "vim/.vim.symlink/plugin/vim-surround"]
+	path = vim/.vim.symlink/plugin/vim-surround
+	url = https://github.com/tpope/vim-surround.git

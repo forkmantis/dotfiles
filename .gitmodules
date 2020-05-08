@@ -28,3 +28,6 @@
 [submodule "vim/.vim.symlink/plugin/vim-surround"]
 	path = vim/.vim.symlink/plugin/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/.vim.symlink/plugin/vim-sort-motion"]
+	path = vim/.vim.symlink/plugin/vim-sort-motion
+	url = https://github.com/christoomey/vim-sort-motion.git

@@ -92,3 +92,6 @@ vnoremap < <gv
 
 " FZF mappings
 nnoremap <Leader>s :<C-u>FZF<CR>
+
+" Repeat last macro with a single key
+nnoremap <C-b> @@

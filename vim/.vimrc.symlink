@@ -3,7 +3,6 @@ filetype off                  " required
 set number                    " turn on line numbers
 set relativenumber            " turn on relative line numbers
 set hidden                    " Allow switching buffers without saving
-set cursorline                " Highlight current line so you don't have to search for the cursor
 
 filetype plugin indent on    " required
 

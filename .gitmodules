@@ -34,3 +34,6 @@
 [submodule "vim/.vim.symlink/plugin/ReplaceWithRegister"]
 	path = vim/.vim.symlink/plugin/ReplaceWithRegister
 	url = https://github.com/vim-scripts/ReplaceWithRegister.git
+[submodule "vim/.vim.symlink/plugin/vim-commentary"]
+	path = vim/.vim.symlink/plugin/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git

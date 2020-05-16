@@ -31,3 +31,6 @@
 [submodule "vim/.vim.symlink/plugin/vim-sort-motion"]
 	path = vim/.vim.symlink/plugin/vim-sort-motion
 	url = https://github.com/christoomey/vim-sort-motion.git
+[submodule "vim/.vim.symlink/plugin/ReplaceWithRegister"]
+	path = vim/.vim.symlink/plugin/ReplaceWithRegister
+	url = https://github.com/vim-scripts/ReplaceWithRegister.git

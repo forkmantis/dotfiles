@@ -19,6 +19,9 @@ let g:OmniSharp_server_stdio = 1
 " Timeout in seconds to wait for a response from the server
 let g:OmniSharp_timeout = 5
 
+" Use fzf for Code Actions and Find Symbols
+let g:OmniSharp_selector_ui = 'fzf'
+
 " Don't autoselect first omnicomplete option, show options even if there is only
 " one (so the preview documentation is accessible). Remove 'preview', 'popup'
 " and 'popuphidden' if you don't want to see any documentation whatsoever.

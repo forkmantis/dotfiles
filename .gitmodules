@@ -37,3 +37,6 @@
 [submodule "vim/.vim.symlink/plugin/vim-commentary"]
 	path = vim/.vim.symlink/plugin/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/.vim.symlink/pack/bundle/start/vim-mucomplete"]
+	path = vim/.vim.symlink/pack/bundle/start/vim-mucomplete
+	url = https://github.com/lifepillar/vim-mucomplete.git

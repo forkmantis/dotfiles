@@ -66,6 +66,10 @@ autocmd VimResized * | set columns=120
 " case insensitive searches
 :set ignorecase
 
+" VIm popup menu coloring
+hi Pmenu ctermbg=black
+hi Pmenu ctermfg=green
+
 ":filetype plugin on
 ":helptags ~/.vim/doc
 

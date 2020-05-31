@@ -37,3 +37,6 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/vim-mucomplete"]
 	path = vim/.vim.symlink/pack/bundle/start/vim-mucomplete
 	url = https://github.com/lifepillar/vim-mucomplete.git
+[submodule "vim/.vim.symlink/pack/bundle/start/ultisnips"]
+	path = vim/.vim.symlink/pack/bundle/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git

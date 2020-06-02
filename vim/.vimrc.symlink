@@ -63,6 +63,9 @@ autocmd VimResized * | set columns=120
 " Show current edit mode, and wether or not file has been edited since last save
 :set showmode
 
+" Show the count of hits on your current search
+:set shortmess-=S
+
 " case insensitive searches
 :set ignorecase
 

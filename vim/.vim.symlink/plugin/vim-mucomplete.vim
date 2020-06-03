@@ -23,6 +23,3 @@ imap <plug>(MyFwd) <plug>(MUcompleteFwd)
 inoremap <plug>(TryUlti) <c-r>=TryUltiSnips()<cr>
 imap <expr> <silent> <plug>(TryMU) TryMUcomplete()
 imap <expr> <silent> <tab> "\<plug>(TryUlti)\<plug>(TryMU)"
-
-let g:UltiSnipsExpandTrigger = "<f5>"        " Do not use <tab>
-let g:UltiSnipsJumpForwardTrigger = "<c-b>"  " Do not use <c-j>

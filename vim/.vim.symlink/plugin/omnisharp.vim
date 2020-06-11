@@ -22,17 +22,9 @@ let g:OmniSharp_timeout = 5
 " Use fzf for Code Actions and Find Symbols
 let g:OmniSharp_selector_ui = 'fzf'
 
-" Don't autoselect first omnicomplete option, show options even if there is only
-" one (so the preview documentation is accessible). Remove 'preview', 'popup'
-" and 'popuphidden' if you don't want to see any documentation whatsoever.
-" Note that neovim does not support `popuphidden` or `popup` yet:
-" https://github.com/neovim/neovim/issues/10996
-" set completeopt=longest,menuone,preview,popuphidden
-
 " Highlight the completion documentation popup background/foreground the same as
 " the completion menu itself, for better readability with highlighted
 " documentation.
-"set completepopup=highlight:Pmenu,border:off
 set completepopup=highlight:Pmenu
 
 " Fetch full documentation during omnicomplete requests.

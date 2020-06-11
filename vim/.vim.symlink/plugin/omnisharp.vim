@@ -27,12 +27,13 @@ let g:OmniSharp_selector_ui = 'fzf'
 " and 'popuphidden' if you don't want to see any documentation whatsoever.
 " Note that neovim does not support `popuphidden` or `popup` yet:
 " https://github.com/neovim/neovim/issues/10996
-set completeopt=longest,menuone,preview,popuphidden
+" set completeopt=longest,menuone,preview,popuphidden
 
 " Highlight the completion documentation popup background/foreground the same as
 " the completion menu itself, for better readability with highlighted
 " documentation.
-set completepopup=highlight:Pmenu,border:off
+"set completepopup=highlight:Pmenu,border:off
+set completepopup=highlight:Pmenu
 
 " Fetch full documentation during omnicomplete requests.
 " By default, only Type/Method signatures are fetched. Full documentation can

@@ -40,3 +40,6 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/vim-snippets"]
 	path = vim/.vim.symlink/pack/bundle/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/.vim.symlink/pack/bundle/start/asyncomplete.vim"]
+	path = vim/.vim.symlink/pack/bundle/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git

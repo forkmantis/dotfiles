@@ -7,3 +7,13 @@ b() {
   | cut -d$'\t' -f2 \
   | xargs open
 }
+
+function fco(){
+        git checkout $(git branch -a | fzf)
+}
+function fcof(){
+        git checkout $(git ls-files -m | fzf)
+}
+function faf(){
+        git add $(git ls-files --others --exclude-standard -m | fzf)
+}

@@ -13,4 +13,4 @@ inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 "     be overridden all the time
 let g:asyncomplete_auto_completeopt = 0
 
-set completeopt=longest,menuone,noinsert,popuphidden,preview
+set completeopt=menuone,noinsert,popuphidden,preview

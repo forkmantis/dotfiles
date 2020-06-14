@@ -69,6 +69,15 @@ autocmd VimResized * | set columns=120
 " case insensitive searches
 :set ignorecase
 
+let g:netrw_liststyle = 3      " netrw tree style
+let g:netrw_banner = 0         " netrw disable banner
+let g:netrw_winsize = 15       " Set netrw width
+let g:netrw_browse_split = 4   " Open selected file in previous tab
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
 " VIm popup menu coloring
 hi Pmenu ctermbg=black
 hi Pmenu ctermfg=green

@@ -74,9 +74,9 @@ augroup omnisharp_commands
 augroup END
 
 " Contextual code actions (uses fzf, CtrlP or unite.vim when available)
-nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
+nnoremap <Leader>. :OmniSharpGetCodeActions<CR>
 " Run code actions with text selected in visual mode to extract method
-xnoremap <Leader><Space> :call OmniSharp#GetCodeActions('visual')<CR>
+xnoremap <Leader>. :call OmniSharp#GetCodeActions('visual')<CR>
 
 " Rename with dialog
 nnoremap <Leader>nm :OmniSharpRename<CR>

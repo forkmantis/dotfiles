@@ -16,6 +16,9 @@ autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 
 "/*[ Settings ]*******************************************************************/
 
+" Mostly for OmniSharpSignatureHelp, but also impacts other things
+set updatetime=500
+
 " Set syntax highlighting on
 :syntax on
 

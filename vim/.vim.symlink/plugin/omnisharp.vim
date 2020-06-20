@@ -64,6 +64,7 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <buffer> <Leader>dc :OmniSharpDocumentation<CR>
     autocmd FileType cs nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
     autocmd FileType cs inoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
+    autocmd CursorHoldI cs :OmniSharpSignatureHelp<CR>
 
     " Navigate up and down by method/property/field
     autocmd FileType cs nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>

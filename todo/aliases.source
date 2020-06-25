@@ -4,5 +4,6 @@ alias tlw="tls @work"
 alias tlh="tls @home"
 alias trep="tail -15 ~/Dropbox/todo/report.txt"
 alias tice="t listfile icebox"
+alias tsin="t lsa | grep -i pavel | tail -31"
 
 function txfer() { cat ~/Dropbox/todo/vimdo.txt | tee -a ~/Dropbox/todo/todo.txt;  echo "" > ~/Dropbox/todo/vimdo.txt }

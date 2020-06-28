@@ -43,3 +43,6 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/asyncomplete.vim"]
 	path = vim/.vim.symlink/pack/bundle/start/asyncomplete.vim
 	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "vim/.vim.symlink/pack/bundle/start/ale"]
+	path = vim/.vim.symlink/pack/bundle/start/ale
+	url = https://github.com/dense-analysis/ale.git

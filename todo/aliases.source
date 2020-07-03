@@ -1,4 +1,4 @@
-alias t="todo.sh"
+alias t="todo.sh -a"
 alias tls="clear; todo.sh ls"
 alias tlw="tls @work"
 alias tlh="tls @home"

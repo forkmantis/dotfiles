@@ -1,0 +1,7 @@
+function editclip(){
+    clipfile=$(mktemp /tmp/pbfile.XXXXXXXXX)
+    pbpaste > $clipfile
+    vim $clipfile
+    pbcopy < $clipfile
+    rm $clipfile
+}

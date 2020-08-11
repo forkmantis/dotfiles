@@ -16,6 +16,15 @@ matches:
         params:
           format: "%m/%d/%Y"
 
+  # Metal Song of the Day
+  - trigger: ":dailymetal"
+    replace: "```\r{{mydate}} Metal Song of the Day Thread\r```"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
   # Dates
   - trigger: ":date"
     replace: "{{mydate}}"

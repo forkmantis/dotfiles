@@ -2,7 +2,7 @@
 	name = Will Killian
 	email = github.user@forkmantis.com
 [push]
-    default = simple
+	default = current
 [alias]
     # The branch name (useful for other aliases)
     branch-name = "!git rev-parse --abbrev-ref HEAD"

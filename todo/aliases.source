@@ -7,6 +7,7 @@ alias trep="tail -15 ~/Dropbox/todo/report.txt"
 alias tice="t listfile icebox"
 alias tsin="t lsa | grep -i pavel"
 alias tpush="t lsa | grep 'wod: StrongFirst Pushup'"
+alias tpull="t lsa | grep 'wod: StrongFirst Pullup'"
 alias tvim="vim ~/Dropbox/todo/todo.txt"
 
 function txfer() { cat ~/Dropbox/todo/vimdo.txt | tee -a ~/Dropbox/todo/todo.txt;  echo "" > ~/Dropbox/todo/vimdo.txt }

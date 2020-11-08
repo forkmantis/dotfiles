@@ -1,3 +1,13 @@
+global !p
+# Autocomplete function.  Learn how @ https://www.youtube.com/watch?v=JJQYwt6Diro
+def complete(t, opts):
+	if t:
+		opts = [ m[len(t):] for m in opts if m.startswith(t) ]
+	if len(opts) == 1:
+		return opts[0]
+	return "(" + '|'.join(opts) + ')'
+endglobal
+
 snippet sin "Snippet for inserting a Timeless Pavel Simple/Sinister practice session todo"
 (W) wod: Pavel Timeless Simple ${1:LR} ${2:2} @ ${3:35}#${4:, ${5:8} @ ${6:53}#};${0}
 endsnippet
@@ -11,12 +21,12 @@ snippet sinc "Snippet for inserting a comples Timeless Pavel Simple/Sinister pra
 endsnippet
 
 # https://www.strongfirst.com/plans-for-building-powerful-pushups/
-snippet sfpushmax "SF Elite Instructor Jody Beasly Powerful Pushup Program: Finding Max"
+snippet sfpm "SF Elite Instructor Jody Beasly Powerful Pushup Program: Finding Max"
 (W) wod: StrongFirst ${1:Explosive }Pushup Max: ${2:22}${0}
 endsnippet
 
-snippet sfpushsession "SF Elite Instructor Jody Beasly Powerful Pushup Program: Practice Session"
-(W) wod: StrongFirst ${1:Explosive }Pushup Practice Session: (day ${2:1} of 3) - ${3:3} sets of ${4:11}${0}
+snippet sfps "Strong First Push/Pull Session" b
+(W) wod: StrongFirst ${1:Explosive }$2`!p snip.rv=complete(t[2], ['Pushup', 'Pullup'])` Practice Session: (day ${3:1} of 3) - ${4:3} sets of ${5:11}${0}
 endsnippet
 
 snippet golften "Log a session of exercises for golfer/tennis elbow"

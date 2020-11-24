@@ -42,3 +42,13 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+
+  # stuff for labeling
+  - trigger: ":gr"
+    replace: "2018-growth"
+
+  - trigger: ":ngr"
+    replace: "2018-non-growth"
+
+  - trigger: ":?gr"
+    replace: "2018-second-opinion"

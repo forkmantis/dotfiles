@@ -3,6 +3,7 @@ filetype off                  " required
 set number                    " turn on line numbers
 set relativenumber            " turn on relative line numbers
 set hidden                    " Allow switching buffers without saving
+set backspace=indent,eol,start " Allow backspacing over everything https://stackoverflow.com/questions/11560201/backspace-key-not-working-in-vim-vi
 
 filetype plugin indent on    " required
 

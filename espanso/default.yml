@@ -43,12 +43,15 @@ matches:
         params:
           cmd: "echo Hello from your shell"
 
-  # stuff for labeling
-  - trigger: ":gr"
-    replace: "2018-growth"
+  # Exercise logging
+  - trigger: ":9minkb1"
+    replace: "t add \"(W) wod: 3 min ea of crawling, dead bugs, kb carry\""
 
-  - trigger: ":ngr"
-    replace: "2018-non-growth"
+  - trigger: ":9minkb2"
+    replace: "t add \"(W) wod: 3 min ea of marching, crawling, kb carry\""
 
-  - trigger: ":?gr"
-    replace: "2018-second-opinion"
+  - trigger: ":9minkb3"
+    replace: "t add \"(W) wod: 3 min ea of dead bugs, marching, kb carry\""
+
+  - trigger: ":tgu"
+    replace: "t add \"(W) wod: Turkish Get Ups R @ W#\""
